@@ -13,8 +13,8 @@ taskForm.addEventListener("submit", function (event) {
 
     const li = document.createElement("li");
 
-    const span = document. createElement("span");
-    span.textContext = taskText;
+    const span = document.createElement("span");
+    span.textContent = taskText;
 
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
