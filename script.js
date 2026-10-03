@@ -12,8 +12,20 @@ taskForm.addEventListener("submit", function (event) {
     }
 
     const li = document.createElement("li");
-    li.textContent = taskText;
+
+    const span = document. createElement("span");
+    span.textContext = taskText;
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Delete";
+    deleteBtn.addEventListener("click", function () {
+        li.remove();
+    });
+
+    li.appendChild(span);
+    li.appendChild(deleteBtn);
     taskList.appendChild(li);
+
 
     taskInput.value = "";
 });
