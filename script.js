@@ -22,6 +22,10 @@ taskForm.addEventListener("submit", function (event) {
         li.remove();
     });
 
+    span.addEventListener("click", function() {
+        span.classList.toggle("done");
+    });
+    
     li.appendChild(span);
     li.appendChild(deleteBtn);
     taskList.appendChild(li);
